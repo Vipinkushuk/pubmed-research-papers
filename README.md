@@ -31,10 +31,19 @@ Additionally, any heuristics like email addresses and domain names (e.g., words 
    git clone https://github.com/Vipinkushuk/pubmed-research-papers.git
    cd pubmed-research-papers
 
-## Install Dependencies using Poetry:
-**Make sure you have Poetry installed. Then, install the dependencies:
+2. **Install Dependencies using Poetry**:
+   Make sure you have Poetry installed. Then, install the dependencies:
    ```bash
    poetry install
 
+3. **Usage**:
+   To fetch research papers, run the following command in your terminal:
+   ```bash
+   poetry run get-papers-list -q "<your-query>" -f "<output-file.csv>"
 
+4. **Example**
+   This will search for papers related to "cancer therapy" and save the results in cancer_papers.csv.
+   ```bash
+   poetry run get-papers-list -q "cancer therapy" -f "cancer_papers.csv"
 
+   
